@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit AddressBookItem{% endblock %}
+
+{% block body %}
+    <h1>Edit AddressBookItem</h1>
+
+    {{ include('address_book_item/_form.html.twig', {'button_label': 'Save'|trans}) }}
+
+    <a href="{{ path('app_address_book_item_index') }}" class="btn btn-primary">{{ 'back to list'|trans }}</a>
+
+{% endblock %}

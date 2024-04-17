@@ -1,0 +1,9 @@
+{
+    "controllers": {
+        "@kibatic/datagrid-bundle": {
+            "checker": {
+                "enabled": true,
+                "fetch": "eager"
+            }
+        }
+    },

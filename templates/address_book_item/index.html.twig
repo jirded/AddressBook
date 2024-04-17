@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}AddressBookItem index{% endblock %}
+
+{% block body %}
+    <h1>AddressBookItem index</h1>
+
+    <a href="{{ path('app_address_book_item_new') }}" class="btn btn-primary">{{ 'Create new'|trans }}</a><br /><br />
+
+    {% include grid.theme ~ '/datagrid.html.twig' %}
+{% endblock %}
